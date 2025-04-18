@@ -20,7 +20,7 @@ class SignUpController extends Controller
             ], Request::HTTP_CREATED);
         } catch (\Exception $e) {
             return response()->json([
-                'message' => 'Error creating client',
+                'message' => 'Error creating the client',
                 'error' => $e->getMessage()
             ], Request::HTTP_INTERNAL_SERVER_ERROR);
         }
